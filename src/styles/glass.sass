@@ -1,0 +1,41 @@
+
+$terminal-win-height: 70vh
+$terminal-win-width: 70vw
+$padding: 25px
+$foreground: #fff
+$background: #000
+$font-size: 18px
+$font-size-output: 24px
+$caret-colour: #fff
+$colour-as-success: #4bec4b
+$colour-as-error: #e12828
+$font-family:  "Anonymous Pro", monospace
+
+
+
+@font-face
+  font-family: Anonymous Pro
+  src: url("@/fonts/AnonymousPro-Regular.ttf")
+
+
+
+@mixin TerminalWindowStyling
+  backdrop-filter: blur(16px) saturate(180%)
+  -webkit-backdrop-filter: blur(16px) saturate(180%)
+  background-color: rgba(17, 25, 37, 0.75)
+  border-radius: 12px
+
+@mixin TerminalComponentStyling
+  background-image: radial-gradient(at 50% 27%, #ff9f34 0, transparent 59%), radial-gradient(at 66% 59%, #61ffd8 0, transparent 59%), radial-gradient(at 32% 58%, #9d00ff 0, transparent 59%)
+
+@mixin TerminalBlinkingCaretStyling
+  box-shadow: 10px 10px 60px #ffffff, -10px -10px 60px #ffffff
+
+@mixin TerminalPromptStyling
+  text-shadow: 10px 10px 60px #ff9f34
+
+@mixin TerminalInsertFieldStyling
+
+@mixin TerminalOutputStyling
+
+@mixin TerminalPromptStyling

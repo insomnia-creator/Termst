@@ -1,0 +1,42 @@
+$terminal-win-height: 70vh
+$terminal-win-width: 70vw
+$padding: 10px
+$foreground: #000
+$background: #e0e0ee
+$font-size: 18px
+$font-size-output: 24px
+$caret-colour: #000
+$colour-as-error: #f63737
+$colour-as-success: #3ef644
+$font-family:  "Anonymous Pro", monospace
+
+
+@font-face
+ font-family: Anonymous Pro
+ src: url("@/fonts/AnonymousPro-Regular.ttf")
+
+
+
+@mixin TerminalWindowComponentStyling
+ box-shadow: 0 4px 15px rgb(0 0 0 / 10%), -4px -4px 15px #ffffff
+ border: rgba(247, 254, 255, 0.85) solid 10px
+ border-radius: 15px
+
+@mixin TerminalComponentStyling
+
+@mixin TerminalWindowStyling
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%), -4px -4px 15px #ffffff
+  border: rgba(247, 254, 255, 0.85) solid 10px
+  border-radius: 15px
+
+@mixin TerminalComponentStyling
+
+@mixin TerminalBlinkingCaretStyling
+
+@mixin TerminalPromptStyling
+
+@mixin TerminalInsertFieldStyling
+
+@mixin TerminalOutputStyling
+
+@mixin TerminalPromptStyling
