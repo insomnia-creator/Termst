@@ -4,6 +4,7 @@ import { CommandInterface } from "../parser";
 import {Weather} from "@/scripts/commands/weather";
 import {Search} from "@/scripts/commands/search";
 import {Help} from "@/scripts/commands/help";
+import {Exit} from "@/scripts/commands/exit";
 
 
 export const commands: Commands[] = [
@@ -44,6 +45,13 @@ export const commands: Commands[] = [
             return new Help(command)
         },
         helpCommand: `Help???`
+    },
+    {
+        name: "exit",
+        ifMatches: (command) => {
+            return new Exit(command)
+        },
+        helpCommand: `Exits the terminal.`
     }
 ];
 

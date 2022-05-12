@@ -22,7 +22,6 @@ export class Template implements Command {
     ];
     public description = 'Template.'
     public name = 'template'
-    public helpCommandDescription = 'You ran a help command \n for a template.'
 
 
     constructor(public command: CommandInterface) {

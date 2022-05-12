@@ -19,7 +19,7 @@ export default defineComponent({
   color: $foreground
   height: 100vh
   width: 100vw
-  font-family: $font-family
 *
-  margin: 0px !important
+  margin: 0 !important
+  font-family: $font-family
 </style>

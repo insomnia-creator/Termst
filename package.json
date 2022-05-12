@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pack": "crx pack extension -o TermStart.crx"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "crx": "^5.0.1",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0"
   },
