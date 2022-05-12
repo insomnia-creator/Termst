@@ -17,9 +17,8 @@ export interface KeyDescription {
     keyDescription: string
 }
 export class Command {
-    name?: string;
-    description?: string;
-    helpCommandDescription?: string;
+    name!: string;
+    description!: string;
     argumentDescription?: KeyDescription[];
     flagDescription?: KeyDescription[];
     optionsDescription?: KeyDescription[];
@@ -34,6 +33,7 @@ export class Command {
 
 export interface Commands {
     name: string;
-    ifMatches: (command: CommandInterface) => Command;   
+    ifMatches: (command: CommandInterface) => Command;
+    helpCommand: string;
 }
 

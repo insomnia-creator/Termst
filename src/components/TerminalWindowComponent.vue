@@ -18,7 +18,7 @@ import TerminalInsertField from "@/components/TerminalInsertField.vue";
 import TerminalBlinkingCaret from "@/components/TerminalBlinkingCaret.vue";
 import {parse} from "@/scripts/parser";
 import {defineComponent} from "vue";
-import {indexCommands} from "@/scripts/commands/export";
+import indexCommands from "@/scripts/commands/export";
 import TerminalOutput from "./TerminalOutput.vue";
 import { CommandResponse } from "@/scripts/command";
 

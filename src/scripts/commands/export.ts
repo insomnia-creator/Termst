@@ -3,30 +3,53 @@ import {Echo} from "@/scripts/commands/echo";
 import { CommandInterface } from "../parser";
 import {Weather} from "@/scripts/commands/weather";
 import {Search} from "@/scripts/commands/search";
-const commands: Commands[] = [
+import {Help} from "@/scripts/commands/help";
+
+
+export const commands: Commands[] = [
     {
         name: 'echo',
         ifMatches: (command: CommandInterface) => {
             return new Echo(command);
-        }
+        },
+        helpCommand: `Usage: 
+        echo <message>`
     },
     {
         name: 'weather',
         ifMatches: (command) => {
             return new Weather(command);
-        }
+        },
+        helpCommand: `Usage:
+        weather <city>`
     },
     {
         name: "search",
         ifMatches: (command => {
             return new Search(command);
-        })
+        }),
+        helpCommand: `search <query>
+         
+         Options: 
+         --setengine=<engine> : Sets the default Search engine
+         --engine=<engine> : Sets the search engine to use for this search
+         
+         Flags:
+         
+         -n : Open the result in a new tab`
+    },
+    {
+        name: "help",
+        ifMatches: (command) => {
+            return new Help(command)
+        },
+        helpCommand: `Help???`
     }
 ];
 
 
 
-export const indexCommands = (cmnd: CommandInterface): Promise<Command> => {
+export default   (cmnd: CommandInterface): Promise<Command> => {
     
     return new Promise((resolve, reject) => {
         commands.forEach(command => {
@@ -50,3 +73,19 @@ export const indexCommands = (cmnd: CommandInterface): Promise<Command> => {
     })
 }
 
+
+export const getHelpMessage = (command: string): string => {
+    let message = '';
+
+
+    for(let i = 0; i <= commands.length; i++){
+        if(commands[i].name.toLowerCase() === command){
+            message = commands[i].helpCommand;
+            break;
+        } else {
+            message = `Command does not exist.`;
+        }
+    }
+
+    return message;
+}

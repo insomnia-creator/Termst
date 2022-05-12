@@ -2,14 +2,15 @@ import {Command, CommandResponse} from "@/scripts/command";
 import {CommandInterface} from "@/scripts/parser";
 
 export class Echo implements Command {
-    public argumentDescription: { key: string; keyDescription: string }[] = [
+     argumentDescription: { key: string; keyDescription: string }[] = [
         {
             keyDescription: "The message to echo",
             key: "message",
         }
     ]
-    public description = 'Echo a message'
-    public name = 'echo'
+     description = 'Echo a message'
+     name = 'echo'
+
     constructor(public command:CommandInterface) {}
 
     async execute(): Promise<CommandResponse> {

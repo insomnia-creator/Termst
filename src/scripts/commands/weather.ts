@@ -2,15 +2,18 @@ import {Command, CommandResponse} from "@/scripts/command";
 import {CommandInterface} from "@/scripts/parser";
 
 export class Weather implements Command {
-    public argumentDescription = [
+     argumentDescription = [
         {
             key: "city",
             keyDescription: "City to look for the report, you don't need to pass in this parameter necessarily."
         }
     ];
-    public description = 'Fetch your weather report, from wttr.in of course.'
-    public name = 'weather'
-    constructor(public command:CommandInterface) {}
+     description = 'Fetch your weather report, from wttr.in of course.'
+     name = 'weather'
+
+
+    
+    constructor( public command:CommandInterface) {}
 
     async execute(): Promise<CommandResponse> {
 

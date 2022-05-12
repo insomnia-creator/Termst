@@ -35,6 +35,8 @@ export default defineComponent({
 
 p
   font-size: $font-size-output
+  white-space: pre
+  overflow-x: auto
 
 .terminal-command-group
   display: flex
@@ -42,6 +44,8 @@ p
   align-items: center
   font-size: $font-size
   margin-bottom: 5px
+
+
 .error
   color: $colour-as-error
 .success

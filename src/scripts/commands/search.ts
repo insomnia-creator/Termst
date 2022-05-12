@@ -8,15 +8,35 @@ export class Search implements Command {
     constructor(public command: CommandInterface) {
     }
 
-    public name = 'search'
-    public description = 'Use a search engine to search a query.'
+    name = 'search'
+    description = 'Use a search engine to search a query.'
 
-    public argumentDescription = [
+    argumentDescription = [
         {
             key: "query",
             keyDescription: "Search query"
         }
     ]
+
+    flagDescription = [
+        {
+            key: "-n",
+            keyDescription: "Open the query in a new tab."
+        }
+    ];
+
+    optionsDescription = [
+        {
+            key: '--setengine',
+            keyDescription: "Sets the default search engine"
+        },
+        {
+            key: "--engine",
+            keyDescription: "Sets the engine to use for this specific search"
+        }
+    ];
+
+
     getDefaultSearchEngine(){
         let defaultEng = localStorage.getItem('defaultSearchEngine')
 
