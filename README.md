@@ -30,11 +30,11 @@ Styling is simple enough, you can poke around or you can fully modify any elemen
 TermStart is starting off small but has high hopes.
 
 - [X] Get a working build up
-- [] Exit private alpha 
-- [] Fix fonts
-- [] Release extension publically
-- [] Add more themes
-- [] Add more commands
+- [ ] Exit private alpha 
+- [ ] Fix fonts
+- [ ] Release extension publically
+- [ ] Add more themes
+- [ ] Add more commands
 
 ### Developer Experience
 - [X] Create a basic command template/structure.
@@ -43,9 +43,9 @@ TermStart is starting off small but has high hopes.
 ### User Experience
 - [X] Add a few custom themes
 - [X] Add a few built in QOL commands
-- [] Implement easier toggling of themes from within the extension
-- [] Remove dependence on Vue for scripts
-- [] Add ability to 
+- [ ] Implement easier toggling of themes from within the extension
+- [ ] Remove dependence on Vue for scripts
+- [ ] Add ability to 
 
 
 It maybe starting off as a hobby project but I have hopes that this thing will be more than just a cool startpage. It will be a place for interaction and infinite productivity. To get things done faster whilst being more simpler. 
