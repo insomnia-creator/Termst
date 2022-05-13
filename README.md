@@ -1,4 +1,4 @@
-# TermStart (private alpha)
+# TermStart (alpha)
 ---
 ### Make the startpage more than just the first page you load up.
 
