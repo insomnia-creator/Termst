@@ -46,7 +46,7 @@ TermStart is starting off small but has high hopes.
 - [X] Add a few built in QOL commands
 - [ ] Implement easier toggling of themes from within the extension
 - [ ] Remove dependence on Vue for scripts
-- [ ] Add ability to 
+- [ ] Add ability to download commands from anywhere.
 
 
 It's maybe starting off as a hobby project, but I have high hopes that this thing will be more than just a cool start-page. It will be a place for interaction and infinite productivity. To get things done faster whilst being simpler. 
