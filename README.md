@@ -1,4 +1,12 @@
-# TermStart (alpha)
+# Termst (A command a day)
+
+---
+
+## The new command a day initiative!
+
+I will try my best
+
+
 ---
 ### Make the startpage more than just the first page you load up.
 
@@ -14,20 +22,20 @@ Make commands to do anything you want, interact with the filesystem or whatever 
 
 ## Customisable to the core.
 
-TermStart is made using the most bleeding edge technologies out there, with Vue.js, Typescript and Sass.
+Termst is made using the most bleeding edge technologies out there, with Vue.js, Typescript and Sass.
 
-TermStart's default set of components and commands will give you a head start to a clean, minimalist terminal.
+Termst's default set of components and commands will give you a head start to a clean, minimalist terminal.
 
-There's always room for add-ons, so you can configure, script, make termstart anyway you want to.
+There's always room for add-ons, so you can configure, script, make Termst anyway you want to.
 
-TermStart comes with 3 default themes: 
+Termst comes with 3 default themes: 
 Flamingo, Glass and Vue-neu.
 
 Styling is simple enough, you can poke around, or you can fully modify any element you want to.
 
 ## Development Roadmap.
 
-TermStart is starting off small but has high hopes.
+Termst is starting off small but has high hopes.
 
 - [X] Get a working build up
 - [ ] Exit private alpha 
@@ -53,7 +61,7 @@ It's maybe starting off as a hobby project, but I have high hopes that this thin
 
 We're going to set the bar high for what a fully featured startpage can be.
 
-## The idea behind TermStart
+## The idea behind Termst
 
 ### Another Terminal? Great.
 
@@ -71,7 +79,7 @@ A GUI might be better option, but I think a Terminal is a good starting point.
 
 GUI's offer very little room for creativity that raw commands can.
 
-However, TermStart is a good (*Term*)starting point for it to evolve eventually to an interactive GUI.
+However, Termst is a good (*Term*)starting point for it to evolve eventually to an interactive GUI.
 
 
 

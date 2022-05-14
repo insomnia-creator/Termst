@@ -5,6 +5,7 @@ import {Weather} from "@/scripts/commands/weather";
 import {Search} from "@/scripts/commands/search";
 import {Help} from "@/scripts/commands/help";
 import {Exit} from "@/scripts/commands/exit";
+import {Calculate} from "@/scripts/commands/calculate";
 
 
 export const commands: Commands[] = [
@@ -52,6 +53,13 @@ export const commands: Commands[] = [
             return new Exit(command)
         },
         helpCommand: `Exits the terminal.`
+    },
+    {
+        name: 'calculate',
+        ifMatches: (command) => {
+            return new Calculate(command);
+        },
+        helpCommand: `Calculate an equation.`
     }
 ];
 
