@@ -6,7 +6,8 @@ import {Search} from "@/scripts/commands/search";
 import {Help} from "@/scripts/commands/help";
 import {Exit} from "@/scripts/commands/exit";
 import {Calculate} from "@/scripts/commands/calculate";
-
+import { Time } from "@/scripts/commands/time";
+import { DateCommand } from "@/scripts/commands/date";
 
 export const commands: Commands[] = [
     {
@@ -60,6 +61,20 @@ export const commands: Commands[] = [
             return new Calculate(command);
         },
         helpCommand: `Calculate an equation.`
+    },
+    {
+        name: "time",
+        ifMatches: (command) => {
+            return new Time(command);
+        },
+        helpCommand: `Shows the time`
+    },
+    {
+        name: "date",
+        ifMatches: (command)  => {
+           return new DateCommand(command) ;
+        },
+        helpCommand: `Shows the date.`
     }
 ];
 
