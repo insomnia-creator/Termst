@@ -1,13 +1,7 @@
-# Termst (A command a day)
+# Termst 
 
 ---
 
-## The new command a day initiative!
-
-I will try my best
-
-
----
 ### Make the startpage more than just the first page you load up.
 
 The most extensible Terminal startpage you will ever find.
@@ -33,6 +27,10 @@ Flamingo, Glass and Vue-neu.
 
 Styling is simple enough, you can poke around, or you can fully modify any element you want to.
 
+
+
+# [Development Guides](./GUIDES.md)
+
 ## Development Roadmap.
 
 Termst is starting off small but has high hopes.
@@ -55,11 +53,19 @@ Termst is starting off small but has high hopes.
 - [ ] Implement easier toggling of themes from within the extension
 - [ ] Remove dependence on Vue for scripts
 - [ ] Add ability to download commands from anywhere.
+### Extension support
+- [X] Chromium
+- [ ] Firefox
+- [ ] Safari
 
 
 It's maybe starting off as a hobby project, but I have high hopes that this thing will be more than just a cool start-page. It will be a place for interaction and infinite productivity. To get things done faster whilst being simpler. 
 
 We're going to set the bar high for what a fully featured startpage can be.
+
+
+
+
 
 ## The idea behind Termst
 
@@ -79,7 +85,6 @@ A GUI might be better option, but I think a Terminal is a good starting point.
 
 GUI's offer very little room for creativity that raw commands can.
 
-However, Termst is a good (*Term*)starting point for it to evolve eventually to an interactive GUI.
-
+However, Termst is a good starting point for it to evolve eventually to an interactive GUI.
 
 

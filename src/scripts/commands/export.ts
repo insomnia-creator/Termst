@@ -75,7 +75,7 @@ export const commands: Commands[] = [
            return new DateCommand(command) ;
         },
         helpCommand: `Shows the date.`
-    }
+    }, 
 ];
 
 

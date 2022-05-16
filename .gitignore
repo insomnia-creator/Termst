@@ -23,5 +23,5 @@ pnpm-debug.log*
 
 # Termst build files
 /extension
-TermStart.crx
+Termst.crx
 key.pem
