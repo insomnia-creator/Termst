@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "pack": "crx3 pack extension -o Termst.crx"
+    "pack": "crx3 pack extension -o Termst.crx",
+    "theme-compile": "sass src/styles:dist/css"
   },
   "dependencies": {
     "core-js": "^3.8.3",
