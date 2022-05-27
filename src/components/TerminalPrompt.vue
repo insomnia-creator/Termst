@@ -3,7 +3,7 @@
        v-bind:style="$props.colour">{{PROMPT}}</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "TerminalPrompt",
   data(){
@@ -18,13 +18,7 @@ export default {
 </script>
 
 <style lang="sass">
-  @import "@/styles"
-  .prompt
-    color: #ff9f34
-    font-weight: bold
-    white-space: pre
-    @include TerminalPromptStyling()
-
-
+  //@import "@/styles"
+ 
 
 </style>

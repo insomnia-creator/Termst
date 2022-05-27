@@ -1,6 +1,6 @@
 @font-face
   font-family: Anonymous
-  src: url("@/fonts/AnonymousPro.ttf") format("truetype")
+  src: url("../fonts/AnonymousPro.ttf") format("truetype")
 
 
 
@@ -16,9 +16,6 @@ $colour-as-success: inherit
 $colour-as-error: #de4e4e
 $colour-as-success: #95ca63
 $font-family: "Anonymous", monospace
-
-
-
 
 
 @mixin TerminalWindowStyling
@@ -38,3 +35,88 @@ $font-family: "Anonymous", monospace
 
 @mixin TerminalPromptStyling
   color: #A49393
+ 
+
+#app
+  background: $background
+  color: $foreground
+  height: 100vh
+  width: 100vw
+*
+  margin: 0 !important
+  font-family: $font-family
+
+
+@keyframes blink
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+.blinking-caret
+  height: $font-size
+  width: 10px
+  background: $caret-colour
+  animation: blink 1s infinite
+  @include TerminalBlinkingCaretStyling()
+
+body
+  display: grid
+  place-items: center
+  height: 100vh
+  width: 100vw
+  @include TerminalComponentStyling()
+
+.terminal-input
+  caret: transparent !important
+  text-shadow: 0px 0px 0px $foreground
+  color: rgba(0,0,0,0)
+  overflow-x: scroll
+  font-weight: bold
+  @include TerminalInsertFieldStyling()
+  &:focus
+    outline: none
+
+#base
+  @include TerminalOutputStyling()
+
+p
+  font-size: $font-size-output
+  white-space: pre
+  overflow-x: auto
+
+.terminal-command-group
+  display: flex
+  width: auto
+  align-items: center
+  font-size: $font-size
+  margin-bottom: 5px
+
+
+.error
+  color: $colour-as-error
+.success
+  color: $colour-as-success
+
+.prompt
+  color: #ff9f34
+  font-weight: bold
+  white-space: pre
+  @include TerminalPromptStyling()
+
+.terminal
+  height: $terminal-win-height
+  padding: $padding
+  width: $terminal-win-width
+  word-wrap: break-word
+  @include TerminalWindowStyling()
+
+.terminal-input-group
+  display: flex
+  width: auto
+  align-items: center
+  font-size: $font-size  
+
+

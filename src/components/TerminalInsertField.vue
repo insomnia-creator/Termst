@@ -36,15 +36,7 @@ export default defineComponent({
 </script>
 
 <style lang="sass">
-  @import '@/styles'
+  //@import '@/styles'
 
-  .terminal-input
-    caret: transparent !important
-    text-shadow: 0px 0px 0px $foreground
-    color: rgba(0,0,0,0)
-    overflow-x: scroll
-    font-weight: bold
-    @include TerminalInsertFieldStyling()
-    &:focus
-      outline: none
+ 
 </style>

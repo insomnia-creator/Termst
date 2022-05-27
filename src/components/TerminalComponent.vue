@@ -17,13 +17,7 @@ export default {
 </script>
 
 <style lang="sass">
-  @import "@/styles"
+  //@import "@/styles"
 
-  body
-    display: grid
-    place-items: center
-    height: 100vh
-    width: 100vw
-    @include TerminalComponentStyling()
-
+  
 </style>

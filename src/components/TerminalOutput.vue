@@ -28,27 +28,7 @@ export default defineComponent({
 </script>
 
 <style lang="sass">
-@import "@/styles"
+//@import "@/styles"
 
-#base
-  @include TerminalOutputStyling()
-
-p
-  font-size: $font-size-output
-  white-space: pre
-  overflow-x: auto
-
-.terminal-command-group
-  display: flex
-  width: auto
-  align-items: center
-  font-size: $font-size
-  margin-bottom: 5px
-
-
-.error
-  color: $colour-as-error
-.success
-  color: $colour-as-success
 
 </style>

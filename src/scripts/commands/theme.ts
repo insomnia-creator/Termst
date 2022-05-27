@@ -15,11 +15,10 @@ export class Theme implements Command {
     ];
 
     async changeTheme(theme: string) : Promise<CommandResponse> {
-        const linkElement = document.getElementsByTagName('link');
+        const linkElement = Array.from(document.getElementsByTagName('link'));
         const link = linkElement[1];
         link.setAttribute('href', `css/${theme}.css`);
-        //reload window
-        window.location.reload();
+        localStorage.setItem('theme', theme);
         return {
             command: this.command.command,
             returnValue: {type: 'success', furtherDetails: 'Theme changed'},
