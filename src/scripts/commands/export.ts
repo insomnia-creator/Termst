@@ -8,6 +8,7 @@ import {Exit} from "@/scripts/commands/exit";
 import {Calculate} from "@/scripts/commands/calculate";
 import { Time } from "@/scripts/commands/time";
 import { DateCommand } from "@/scripts/commands/date";
+import { Theme } from "./theme";
 
 export const commands: Commands[] = [
     {
@@ -76,6 +77,21 @@ export const commands: Commands[] = [
         },
         helpCommand: `Shows the date.`
     }, 
+    {
+        name: "theme",
+        ifMatches: (command) => {
+            return new Theme(command);
+
+        },
+        helpCommand: `
+        Change the theme:
+
+        Usage:
+        theme <theme>
+        Available themes:
+        vue-neu, flamingo and glass.
+        `
+    }
 ];
 
 

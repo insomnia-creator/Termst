@@ -9,17 +9,11 @@ import TerminalComponent from "@/components/TerminalComponent.vue";
 export default defineComponent({
   name: "App",
   components: { TerminalComponent },
+  
 });
 </script>
 
 <style lang="sass">
-@import "styles"
-#app
-  background: $background
-  color: $foreground
-  height: 100vh
-  width: 100vw
-*
-  margin: 0 !important
-  font-family: $font-family
+// @import "styles"
+
 </style>

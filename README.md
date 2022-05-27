@@ -1,5 +1,9 @@
-# Termst 
+# Termst(Theme toggle-r!)
 
+New theme toggle-r command! Just run theme (theme) and you can change themes directly from within the Terminal.
+Next goal: Add custom widgets!!!
+
+Thank you all so much for supporting me. Sorry for the lack of inactivity the previous week, just had tons of work 💪.
 ---
 
 ### Make the startpage more than just the first page you load up.

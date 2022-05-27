@@ -59,19 +59,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="sass">
-@import "@/styles"
+// @import "@/styles"
 
-.terminal
-  height: $terminal-win-height
-  padding: $padding
-  width: $terminal-win-width
-  word-wrap: break-word
-  @include TerminalWindowStyling()
-
-.terminal-input-group
-  display: flex
-  width: auto
-  align-items: center
-  font-size: $font-size
 
 </style>
