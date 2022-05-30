@@ -54,7 +54,7 @@ Termst is starting off small but has high hopes.
 ### User Experience
 - [X] Add a few custom themes
 - [X] Add a few built in QOL commands
-- [ ] Implement easier toggling of themes from within the extension
+- [X] Implement easier toggling of themes from within the extension
 - [ ] Remove dependence on Vue for scripts
 - [ ] Add ability to download commands from anywhere.
 ### Extension support
